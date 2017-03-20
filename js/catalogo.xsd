@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="catalogo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="album" maxOccurs="unbounded" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+    <xs:simpleType name="Categoria">
+        <xs:restriction base="xs:string">
+           <xs:enumeration value="rock"/>
+            <xs:enumeration value="indie"/>
+            <xs:enumeration value="reggae"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Year">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="([1-2])([0-9]){3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Nombre">
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1"/>
+          <xs:maxLength  value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+      
+    <xs:annotation>
+      <xs:documentation xml:lang="es">
+          Esta es mi documentacion
+      </xs:documentation>
+    </xs:annotation>
+     
+    <xs:complexType name="tipoAlbum">
+          <xs:sequence>
+            <xs:element name="categoria" type="Categoria"/>
+            <xs:element name="year" type="Year"/>
+            <xs:element name="nombre" type="Nombre" maxOccurs="unbounded"/>
+          </xs:sequence>
+          <xs:attribute name="nombre" type="xs:string"/>
+    </xs:complexType>
+      
+    <xs:element name="album" type="tipoAlbum"/>  
+</xs:schema>

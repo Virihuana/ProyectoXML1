@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Generic - Spatial by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />	
+
+		<script type="text/javascript" src="js/dojo-release-1.11.2-src/dojo/dojo.js"></script>	
+		<script src="js/jquery-1.11.3.min.js"></script>	
+		<script src="js/xml.js-master/xmllint.js"></script>
+		<script src="js/ajax.js"></script>
+		<script type="text/javascript">
+			cargarTabla();
+			cargarAlbums();
+		</script>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><strong><a href="index.html">Spatial</a></strong> by Templated</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html">Catálogo</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+			
+					<!-- Form -->
+						<section>
+							<div id="res"></div>
+							<h3>AGREGAR ÁLBUM</h3>
+							<div id="preview"></div>
+							<div id="err"></div>
+							<form id="form" method="POST" enctype="multipart/form-data">
+								<div class="row uniform 100%">
+									<div class="5u$">
+										<input type="text" name="year" id="year" value="" placeholder="Year" />
+									</div>
+									<div class="5u$">
+										<input type="text" name="album" id="album" value="" placeholder="Album" />
+									</div>
+									<div class="5u$">
+										<div class="select-wrapper">
+											<select name="category" id="category">
+												<option value="">- Category -</option>
+												<option value="rock">Rock</option>
+												<option value="indie">Indie</option>
+												<option value="reggae">Reggae</option>
+											</select>
+										</div>
+									</div>	
+									<div class="5u$">
+										<input id="uploadImage" type="file" accept="image/*" name="image" />
+									</div>	
+									<div class="5u$">
+	              						<input id="button" type="submit" value="Upload">
+									</div>										
+								</div>
+							</form>
+
+							<hr>
+
+							<h3>AGREGAR CANCIÓN AL ÁLBUM<h3>
+							<div class="5u$">
+								<input type="text" name="song" id="song" value="" placeholder="Song" />
+							</div><br>
+							<div class="5u$">
+								<input type="text" name="duracion" id="duracion" value="" placeholder="Duración MM:SS" />
+							</div><br>
+							<div class="5u$">
+								<div class="select-wrapper">
+									<select  id="selectAlbum"></select>
+								</div>
+							</div>	
+							<button id="agregarCancion" onclick="insertSong();">Agregar canción</button>
+							<hr>
+							<div class="10u$">
+								<input onclick="cargarTabla();" type="radio" id="priority-high" name="priority" checked>
+								<label for="priority-high">Mostrar todo</label>
+								<input onclick="mostrarXAlbum();" type="radio" id="priority-low" name="priority">
+								<label for="priority-low">Mostrar por álbum</label>								
+							</div><br><hr>
+							<div id="divXAlbum" class="select-wrapper" style="display:none">
+								<select  id="selectXAlbum"></select><br>
+								<button id="agregarCancion" onclick="buscarXAlbum();">Buscar</button>
+							</div><br>
+							<div id="TablaXAlbum"></div>
+							<div id="divTodo" class="select-wrapper" style="display:none">
+								<div id="tabla01" class="table-wrapper" text-align="center"></div>
+							</div>
+						</section>
+			</div>			
+
+        </section>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-facebook"></a></li>
+						<li><a href="#" class="icon fa-twitter"></a></li>
+						<li><a href="#" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

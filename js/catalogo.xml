@@ -1,0 +1,20 @@
+﻿<catalogo>
+<album>
+      <nombal>Parachutes</nombal>
+      <categoria>rock</categoria>
+      <year>1000</year>
+      <nombre>Spies</nombre>
+</album>
+<album>
+      <nombal>XandY</nombal>
+      <categoria>indie</categoria>
+      <year>2000</year>
+      <nombre>Speed of sound</nombre>
+</album>
+<album>
+    <nombal>Parachutes</nombal>
+    <categoria>rock</categoria>
+    <year>2006</year>
+    <nombre>Viva la vida</nombre>
+</album>
+</catalogo>

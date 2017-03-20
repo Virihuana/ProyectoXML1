@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/wamp/www/TEMPLATEXML/js/validacion2/music.xsl"?>
+<musica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/wamp/www/TEMPLATEXML/js/validacion2/music.xsd">
+  <cancion>
+      <titulo>Charlie Brown</titulo>
+      <album categoria="indie" year="2000">Mylo</album>
+      <duracion>04:42452452452445</duracion>
+  </cancion>
+  <cancion>
+      <titulo>Charlie Brown 2</titulo>
+      <album categoria="indie" year="2000">Mylo</album>
+      <duracion>04:45</duracion>
+  </cancion>
+  <cancion>
+      <titulo>42</titulo>
+      <album categoria="rock" year="2001">Viva la Vida</album>
+      <duracion>05:12</duracion>
+  </cancion>
+</musica>

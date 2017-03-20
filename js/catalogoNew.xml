@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<musica>
+  <cancion number="1">
+    <titulo>Charlie Brown</titulo>
+    <album categoria="indie" year="2000">Mylo</album>
+    <duracion>04:45</duracion>
+  </cancion>
+  <cancion number="2">
+    <titulo>Charlie Brown 2</titulo>
+    <album categoria="indie" year="2000">Mylo</album>
+    <duracion>04:45</duracion>
+  </cancion>
+  <cancion number="3">
+    <titulo>42</titulo>
+    <album categoria="rock" year="2001">Viva la Vida</album>
+    <duracion>05:12</duracion>
+  </cancion>
+</musica>

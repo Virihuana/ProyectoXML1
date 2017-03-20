@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/wamp/www/TEMPLATEXML/php/music.xsl"?>
+<musica>
+  <cancion>
+    <titulo>Spies</titulo>
+    <album categoria="rock" year="2000">Parachutes</album>
+    <duracion>04:20</duracion>
+  </cancion>
+  <cancion>
+    <titulo>Speed Of Sound</titulo>
+    <album categoria="rock" year="2000">Parachutes</album>
+    <duracion>03:40</duracion>
+  </cancion>
+  <cancion>
+    <titulo>Low</titulo>
+    <album categoria="indie" year="2005">XAndY</album>
+    <duracion>05:13</duracion>
+  </cancion>
+  <cancion>
+    <titulo>42</titulo>
+    <album categoria="reggae" year="2003">Viva la Vida</album>
+    <duracion>06:30</duracion>
+  </cancion>
+  <cancion>
+    <titulo>True Love</titulo>
+    <album categoria="rock" year="2006">Ghost Histories</album>
+    <duracion>04:44</duracion>
+  </cancion>
+  <cancion>
+    <titulo>Trouble</titulo>
+    <album categoria="rock" year="2000">Parachutes</album>
+    <duracion>04:58</duracion>
+  </cancion>
+</musica>
